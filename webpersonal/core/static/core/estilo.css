@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+    font-family: sans-serif;
+    }
+
+body{
+    background: white;
+    background-position: top center;
+    height: 1080px;
+}
+
+
+header{
+    overflow: hidden;
+    width: 100%;
+    height: 117px;
+    background: url("top.jpg");
+}
+.wrapper{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+header div img{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 32px;
+    line-height: 84px;
+    width: 188px;
+    height: 47px;
+}
+
+header nav{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    line-height: 20px;
+    border-bottom: 1.1px solid white;
+    background: url("nav.jpg");
+}
+
+header nav a{
+    position: relative;
+    margin-left: 65px;
+    line-height: 35px;
+    color: white;
+    border-right: 1.1px solid white;
+    border-right-style: hidden;
+}
+
+
+.fix {
+    position: fixed;
+    height: 100px;
+}
+
+
+#slide{
+    float: bottom;
+    margin-top: 100px;
+    width: 100%;
+    height: 60px;
+    background: url("gp4.jpg");
+    background-size: cover;
+}
+
+
+#botoneraSlide{
+    float: bottom;
+    margin: auto;
+    width: 100%;
+    height: 26px;
+    background: url("slide.jpg");
+}
+#botoneraSlide ul{
+    float: bottom;
+    margin: auto;
+    width: 100%;
+    height: 26px;
+    background:url("slide.jpg");
+}
+
+
+/*seccion inicio*/
+section#inicio{
+    float: bottom;
+    margin: auto;
+    width: 90%;
+    height: 2000px;
+    background: white;
+}
+section ul li{
+    float: left;
+    width: 100%;
+    height: 99px;
+    border-right: 1.2px solid white;
+}
+section ul li h1{
+    margin: 24px 28px;
+    font-weight: 100;
+    font-size: 25px;
+}
+section ul li p{
+    margin: 25px 29px;
+    font-weight: 100;
+    font-size: 14px;
+}
+section ul li img{
+    width: 272px;
+    height: 84px;
+    background: silver;
+    margin: 0px 31px;
+}
+
+/*seccion somos*/
+section#somos{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: url("auxCon.jpg");
+}
+
+/*seccion servicios*/
+section#servicios{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: white;
+}
+
+/*seccion contacto*/
+section#contacto{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: url("auxsomos.jpg");
+}
+
+
+#bottom{
+    float: bottom;
+    margin: auto;
+    width: 100%;
+    height: 190px;
+    background: url("botom.jpg");
+}
+#bottom ul li{
+    float: left;
+    width: 248.5px;
+    height: 190px;
+}
+#bottom ul li h1{
+    margin: 13px 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+#bottom ul li ol{
+    float: bottom;
+    top: 15px;
+    left: 17px;
+    width: 190px;
+    height: 80px;
+}
+#bottom ul li ol li{
+    height: 20px;
+    text-align: left;
+    list-style: inside;
+    font-size: 15px;
+    color: white;
+    list-style-image: url("flecha.png");
+}
+#bottom ul li img{
+    float: bottom;
+    top: 17px;
+    left: 17px;
+    height: 88px;
+    width: 88px;
+    border: 4px solid white;
+    background: url("imgGaleria.jpg");
+    background-size: cover;
+}
+#bottom ul li ul{
+    float: bottom;
+    top: 20px;
+    left: 15px;
+    height: 44px;
+    width: 200px;
+}
+#bottom ul li ul li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: white;
+    margin: 5px;
+}
+#bottom ul li ul li:first-child{
+    background: url("facebook.png");
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(2){
+    background: url("pinterest.png");
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(3){
+    background: url("gmas.png");
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(4){
+    background: url("twitter.png");
+    background-size: cover;
+}
+#bottom ul li ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+footer{
+    float: bottom;
+    margin: auto;
+    width: 1000px;
+    height: 62px;
+    text-align: center;
+    color: white;
+    line-height: 62px;
+    font-size: 15px;
+    background: black;
+}

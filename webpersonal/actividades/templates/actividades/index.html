@@ -1,0 +1,64 @@
+{% extends 'core/base.html' %}
+{ % load static %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--Section-->
+<section>
+    <p class="text-lg-left ml-5 " style="height: 100px">IDENTIFIQUE SU ACTIVIDAD
+        <br>
+        Información correspondiente a COVID-19, COVID-20</p>
+            <form action="" method="POST" name="primero">{% csrf_token %}
+                <select class="custom-select custom-select mb-3 ml-4 w-50" name="select">
+                  <option class="text-lg-left  selected name="provincia[]">Seleccione la provincia de su interes</option>
+                    {% for provincia in provincias %}
+                    <option>{{provincia}}</option>
+                    {% endfor %}
+                </select>
+                    <br>
+                    <button type="submit" class="btn btn-primary mb-4 ml-5" name="consultar_provincia">Consultar por provincia</button>
+            </form>
+
+            <form action="" method="POST" name="segundo"> {% csrf_token %}
+                <select class="custom-select custom-select mb-3 ml-4 w-50" name="select2">
+                  <option class="text-lg-left text-truncate" style="max-width: 150px;"  selected name="actividad[]">Seleccione la actividad que desea consultar</option>
+                    {% for actividad in actividades %}
+                      <option>{{actividad}}</option>
+                    {% endfor %}
+                </select>
+                <br>
+                <button type="submit" class="btn btn-primary mb-4 ml-5" name="consultar_actividad">Consultar por actividad</button>
+            </form>
+
+        <p class="text-lg-left"><h3>Resultado de la consulta:</h3></p>
+            <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Provincia</th>
+                      <th scope="col">Actividad</th>
+                      <th scope="col">Norma</th>
+                    </tr>
+                  </thead>
+
+                {% for actividad in actividades2 %}
+                  <tbody>
+                    <tr>
+                      <td>{{post}}</td>
+                      <td>{{actividad.actividad}}</td>
+                      <td>{{actividad.normativa}}</td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+                {% for provincia in provincias2 %}
+                  <tbody>
+                    <tr>
+                      <td>{{provincia.provincia}}</td>
+                      <td>{{post}}</td>
+                      <td>{{provincia.norma}}</td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+            </table>
+        </ul>
+    </section>
+{% endblock %}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    {% load static %}
+    <title>{% block title %}{% endblock %}|Consultora Integral MC</title>
+    <link href= "{% static 'core/estilo.css' %}" type="text/css" rel="stylesheet" media="">
+    <link href= "{% static 'core/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <!--script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery-3.5.1.min.js"></script-->
+</head>
+<body>
+    <!--Logotipo-->
+    <header class="fix">
+        <div>
+            <div class="wrapper" id="logo">
+                <img src="{% static 'core/img/logo.png' %}" alt="ConsultoraIntegralMC">
+            </div>
+                <!--Navegacion-->
+                <nav>
+                    <a href="{% url 'home' %}">Inicio</a>
+                    <!--a href="http://localhost:4000/somos/">Quiénes Somos</a>
+                    <a href="http://localhost:4000/servicios/">Servicios</a>
+                    <a href="http://localhost:4000/contacto/">Contactenos</a-->
+                </nav>
+        </div>
+    </header>
+    <!--Section-->
+    <section class="wrapper">
+        <!--slide-->
+        <div id="slide">
+            <ul>
+                <li>
+                    <!--img src="" alt="ConsultoraINtegralMC" width="100% "-->
+                </li>
+            </ul>
+        </div>
+        <!--Botonera slide-->
+        <div id="botoneraSlide">
+            <ul>
+            </ul>
+        </div>
+
+        {% block content %} {% endblock %}
+
+    </section>
+    <!--Bottom-->
+    <div class="wrapper" id="bottom">
+        <ul>
+            <li>
+                <h1>Noticias</h1>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </li>
+            <li>
+                <h1>Novedades</h1>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </li>
+            <li>
+                <h1>Galería</h1>
+                <img src="">
+            </li>
+            <li>
+                <h1>Redes Sociales</h1>
+                <ul>
+                    <li><a href="http://www.facebook.com" target="_blank"></a></li>
+                    <li><a href="http://www.pinterest.com" target="_blank"></a></li>
+                    <li><a href="http://www.google.com" target="_blank"></a></li>
+                    <li><a href="http://www.twitter.com" target="_blank"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--footer-->
+    <footer>
+        &copy; Sitio desarrollado por Víctor Vivas, contacto: victorhvivasc@gmail.com | Todos los derechos reservados
+    </footer>
+
+</body>
+</html>

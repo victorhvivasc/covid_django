@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+
+body{
+    background: url('../static/background.jpg');
+}
+
+header{
+    width: 100%;
+    overflow-y: 150px;
+    background: url('../static/top.jpg');
+    margin-bottom: 20px;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header .logo{
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 100px;
+    float: left;
+}
+header nav{
+    float: right;
+    line-height: 70px;
+}
+header nav a{
+    display: inline-block;
+    color: seagreen;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav a:hover {
+    background: #f56f3a;
+    border-radius: 50px;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms;
+}
+.header2 {
+    position: fixed;
+    height: 100px;
+}
+.header2 .logo {
+    line-height:100px;
+    font-size:30px;
+}
+.header2 nav {
+    line-height: 100px;
+}
+
+
+
+#slide{
+    float: bottom;
+    margin-top: 100px;
+    width: 1000px;
+    height: 81px;
+    background: url('../static/guarda_pampa_larga.jpg');
+}
+
+
+#botoneraSlide{
+    float: bottom;
+    margin: auto;
+    width: 1000px;
+    height: 26px;
+    background: url('../static/slide.jpg');
+}
+#botoneraSlide ul{
+    float: inherit;
+    margin: auto;
+    width: 100px;
+    height: 26px;
+    background:url('../static/slide.jpg');
+}
+#botoneraSlide ul li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgba(35, 45,128, 0.5);
+    border: 3px solid white;
+    margin: 3px 2px;
+}
+
+/*seccion inicio*/
+section#inicio{
+    float: bottom;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    background: white;
+}
+section ul li{
+    float: left;
+    width: 996px;
+    height: 99px;
+    border-right: 1.2px solid white;
+}
+section ul li h1{
+    margin: 24px 28px;
+    font-weight: 100;
+    font-size: 25px;
+}
+section ul li p{
+    margin: 25px 29px;
+    font-weight: 100;
+    font-size: 14px;
+}
+section ul li img{
+    width: 272px;
+    height: 84px;
+    background: silver;
+    margin: 0px 31px;
+}
+
+/*seccion somos*/
+section#somos{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: url('../static/auxCon.jpg');
+}
+
+/*seccion servicios*/
+section#servicios{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: white;
+}
+
+/*seccion contacto*/
+section#contacto{
+    float: bottom;
+    margin: auto;
+    width: 1000px;
+    height: 299px;
+    background: url('../static/auxsomos.jpg');
+}
+
+
+#bottom{
+    float: bottom;
+    margin: auto;
+    width: 1000px;
+    height: 190px;
+    background: url('../static/botom.jpg');
+}
+#bottom ul li{
+    float: left;
+    width: 250px;
+    height: 190px;
+}
+#bottom ul li h1{
+    margin: 13px 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+#bottom ul li ol{
+    position: relative;
+    top: 15px;
+    left: 17px;
+    width: 190px;
+    height: 80px;
+}
+#bottom ul li ol li{
+    height: 20px;
+    text-align: left;
+    list-style: inside;
+    font-size: 15px;
+    color: white;
+    list-style-image: url('../static/flecha.png');
+}
+#bottom ul li img{
+    position: relative;
+    top: 17px;
+    left: 17px;
+    height: 88px;
+    width: 88px;
+    border: 4px solid white;
+    background: url('../static/imgGaleria.jpg');
+    background-size: cover;
+}
+#bottom ul li ul{
+    position: relative;
+    top: 20px;
+    left: 15px;
+    height: 44px;
+    width: 200px;
+}
+#bottom ul li ul li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: white;
+    margin: 5px;
+}
+#bottom ul li ul li:first-child{
+    background: url('../static/facebook.png');
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(2){
+    background: url('../static/pinterest.png');
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(3){
+    background: url('../static/gmas.png');
+    background-size: cover;
+}
+#bottom ul li ul li:nth-child(4){
+    background: url('../static/twitter.png');
+    background-size: cover;
+}
+#bottom ul li ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+footer{
+    position: fixed;
+    margin-top: 500px;
+    width: 1000px;
+    height: 62px;
+    text-align: center;
+    color: white;
+    line-height: 62px;
+    font-size: 15px;
+    background: black;
+}
